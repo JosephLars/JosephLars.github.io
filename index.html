@@ -1,7 +1,125 @@
 <!DOCTYPE html>
+
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jelp</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+	<body>
+			<div class="title">
+				Jelp
+			</div>
+			<div class="subtitle" id="haha">
+				<a href="index.html" style="color: lightyellow;">Developer</a>
+				<a href="photography.html">Photographer</a>
+				<a href="aboutme.html">AboutMe</a>
+			</div>
+
+		Apps
+		<div class=content>
+			<img class=software src="images-software/Tomatorater.png"></img>
+			<div class=description>
+				<bdfont style="font-weight: bold; font-size: 24pt;">Tomatorater</bdfont>
+				<br>
+				<br>
+				Rotten Tomatoes ratings, instantly! Just start typing.
+				<br>
+				<br>
+				<a href="https://www.microsoft.com/store/apps/9nblggh5xfzs?ocid=badge"><img width="150" src="https://assets.windowsphone.com/f2f77ec7-9ba9-4850-9ebe-77e366d08adc/English_Get_it_Win_10_InvariantCulture_Default.png" alt="Get it on Windows 10" /></a>
+			</div>
+		</div>
+		<div class=content>
+			<img class=software src="images-software/Capture2.png"></img>
+			<div class=description>
+				<bdfont style="font-weight: bold; font-size: 24pt;">Refocus</bdfont>
+				<br>
+				<br>
+				Timely notifications reminding you to take a break from the screen
+				<br>
+				<br>
+				<a href="https://github.com/KiwifruitJoe/Refocus"><img width="150" src="http://www.soyosolution.com/res/img/btn/gitHub-download-button.png"/></a>
+			</div>
+		</div>
+		<div class=content>
+			<img class=software src="images-software/FlashToBang.png"></img>
+			<div class=description>
+				<bdfont style="font-weight: bold; font-size: 24pt;">Flash to Bang</bdfont>
+				<br>
+				<br>
+				Flash to Bang answers your question: How far away did that lightning strike?
+				<br>
+				<br>
+				<a href="https://www.microsoft.com/store/apps/9nblgggzm93p?ocid=badge"><img width="150" src="https://assets.windowsphone.com/f2f77ec7-9ba9-4850-9ebe-77e366d08adc/English_Get_it_Win_10_InvariantCulture_Default.png" alt="Get it on Windows 10" /></a>
+			</div>
+		</div>
+
+		Games
+		<div class=content>
+			<img class=software src="images-software/game.png"></img>
+			<div class=description>
+				<bdfont style="font-family:Papyrus;font-weight: bold; font-size: 24pt;">Bridge Defence</bdfont>
+				<br>
+				<br>
+				Defend the bridge!
+				<br>
+				1000+ downloads
+				<br>
+				Made with construct 2
+				<br>
+				<br>
+				<a href="https://www.microsoft.com/store/apps/9wzdncrdxj6g?ocid=badge"><img width="150" src="https://assets.windowsphone.com/f2f77ec7-9ba9-4850-9ebe-77e366d08adc/English_Get_it_Win_10_InvariantCulture_Default.png" alt="Get it on Windows 10" /></a>
+			</div>
+		</div>
+		<div class=content>
+			<img class=software src="images-software/game2.png"></img>
+			<div class=description>
+				<bdfont style="font-family:Arial;font-weight: bold; font-size: 24pt;">Tug 'O' War</bdfont>
+				<br>
+				<br>
+				Pull as hard as you can!
+				<br>
+				Battle your friends
+				<br>
+				Great on a tablet
+				<br>
+				<br>
+				<a href="https://www.microsoft.com/store/apps/9wzdncrdxj6h?ocid=badge"><img width="150" src="https://assets.windowsphone.com/f2f77ec7-9ba9-4850-9ebe-77e366d08adc/English_Get_it_Win_10_InvariantCulture_Default.png" alt="Get it on Windows 10" /></a>
+			</div>
+		</div>
+
+		<div class=footer id="copyright">
+			© Joseph Pratt
+		</div>
+
+		<script>
+			document.getElementById("copyright").innerHTML = "© " + new Date().getFullYear() + " Joseph Pratt";
+
+			//fix position of subheader at certain point
+			$.fn.followTo = function (pos) {
+				var $this = this,
+				$window = $(window);
+
+				$window.scroll(function (e) {
+					if ($window.scrollTop() < pos) {
+						$this.css({
+							position: 'absolute',
+							top: pos
+						});
+					} else {
+						$this.css({
+							position: 'fixed',
+							top: 0
+						});
+					}
+				});
+
+			};
+
+			$('#haha').followTo(100);
+		</script>
+	</body>
 </html>

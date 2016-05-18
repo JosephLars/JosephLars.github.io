@@ -18,14 +18,14 @@ body {
 	vertical-align: middle;
 	line-height: 100px;
 	height: 100px;
-	background-color: limegreen;
+	background-color: lightgreen;
 	color: lightyellow;
 	font-size: 24pt;
 	font-weight: bold;
 	margin-bottom: 80px;
 }
 .subtitle {
-	background-color:lightgreen;
+	background-color:limegreen;
 	color: lightyellow;
 	position: absolute;
 	top: 100px;
@@ -45,7 +45,7 @@ body {
 }
 
 .footer  {
-	background-color: limegreen;
+	background-color: lightgreen;
 	color: lightyellow;
 	padding:15px;
 	clear: both;

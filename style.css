@@ -1,34 +1,24 @@
-/*Generic*/
-html, body  {
-	margin: 0;
-}
-
 body {
+	margin: 0px;
 	font-family: 'Open Sans', sans-serif;
-	font-color:black;
-	background-color:PapayaWhip;
 	text-align:center;
-	font-size: 12pt;
 	background-color: lightyellow;
 	min-width:300px;
 }
 
-.title  {
+header  {
 	font-family: 'Montserrat', sans-serif;
 	vertical-align: middle;
-	line-height: 100px;
-	height: 100px;
+	padding: 1px;
 	background-color: mediumspringgreen;
 	color: lightyellow;
-	font-size: 24pt;
-	font-weight: bold;
 	margin-bottom: 80px;
 }
 .subtitle {
 	background-color:palegreen;
 	color: lightyellow;
 	position: absolute;
-	top: 100px;
+	top: 122px;
 	width: 100%;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -44,7 +34,7 @@ body {
 	color:#333333;
 }
 
-.footer  {
+footer  {
 	background-color: palegreen;
 	color: lightyellow;
 	padding:15px;

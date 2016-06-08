@@ -109,12 +109,12 @@
 			</div>
 		</div>
 
-		<footer id="copyright">
+		<footer>
 			© Joseph Pratt
 		<footer>
 
 		<script>
-			document.getElementById("copyright").innerHTML = "© " + new Date().getFullYear() + " Joseph Pratt";
+			$('footer').html("© " + new Date().getFullYear() + " Joseph Pratt");
 
 			//fix position of subheader at certain point
 			$.fn.followTo = function (pos) {

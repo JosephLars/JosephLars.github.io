@@ -71,7 +71,6 @@ a {
 
 /*For emoji support*/
 img.emoji {
-  // Override any img styles to ensure Emojis are displayed inline
-  margin: 0px !important;
-  display: inline !important;
+  margin: 0px;
+  display: inline;
 }

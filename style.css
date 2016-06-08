@@ -68,3 +68,10 @@ a {
 	text-decoration: none;
 	color: #e6e6e6;
 }
+
+/*For emoji support*/
+img.emoji {
+  // Override any img styles to ensure Emojis are displayed inline
+  margin: 0px !important;
+  display: inline !important;
+}

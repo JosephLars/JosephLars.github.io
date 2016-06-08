@@ -22,6 +22,10 @@ header  {
 	padding-top: 22px;
 	padding-bottom: 22px;
 }
+.subtitle a {
+	text-decoration: none;
+	color: #e6e6e6;
+}
 
 .content {
 	margin:3%;
@@ -62,8 +66,7 @@ img.photo {
 
 /*Links*/
 a {
-	text-decoration: none;
-	color: #e6e6e6;
+
 }
 
 /*For emoji support*/

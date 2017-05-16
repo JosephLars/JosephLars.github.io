@@ -1,34 +1,69 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		</head>
-		<body>
-			<nav>
-				<ul>
-					<li><a href="/">Blog</a></li>
-					<li><a href="/apps">Apps</a></li>
-					<li><a href="/more">More</a></li>
-				</ul>
-			</nav>
-			<div class="container">
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="The personal portfolio for Joseph Lars Pratt. Apps, Games and more.">
+		<meta name="keywords" content="Apps,Games,Photos,Developer,Photographer">
+		<meta name="author" content="Joseph Lars Pratt">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ page.title }}</title>
+		<link rel="icon" type="image/ico" href="images/favicon.ico">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>Joseph Lars Pratt</h1>
+			<h4><img class="emoji" draggable="false" alt="💻" src="https://twemoji.maxcdn.com/16x16/1f4bb.png"> Programmer.&nbsp;
+				<div class="cycle-slideshow" data-cycle-random="true" data-cycle-fx="scrollHorz" style="display:inline-block;">
+					<img class="emoji" draggable="false" alt="✈" src="https://twemoji.maxcdn.com/16x16/2708.png">
+					<img class="emoji" draggable="false" alt="📷" src="https://twemoji.maxcdn.com/16x16/1f4f7.png">
+					<img class="emoji" draggable="false" alt="🍔" src="https://twemoji.maxcdn.com/16x16/1f354.png">
+				</div> Enthusiast.</h4>
+		</header>
+		<div class="subtitle" id="haha">
+			<a href="/" style="color: white;"><b>Blog</b></a> •
+			<a href="/apps">Apps</a> •
+			<a href="/more">More</a>
+		</div>
+
+		Blog
+
+		<div class="container">
 			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-				
-				<ul>
-					<li id="copyright">© Joseph Pratt</li>
-					<li><a href="mailto:josephlars@hotmail.com">email</a></li>
-					<li><a href="https://github.com/JosephLars">github</a></li>
-				</ul>
-			</footer>
-		</body>
+		{{ content }}
+
+		</div><!-- /.container -->
+
+		<footer>
+			© Joseph Pratt
+		</footer>
+
 		<script>
-			$('#copyright').html("© " + new Date().getFullYear() + " Joseph Pratt");
+			$('footer').html("© " + new Date().getFullYear() + " Joseph Pratt");
+			//fix position of subheader at certain point
+			$.fn.followTo = function (pos) {
+				var $this = this,
+				$window = $(window);
+				$window.scroll(function (e) {
+					if ($window.scrollTop() < pos) {
+						$this.css({
+							position: 'absolute',
+							top: pos
+						});
+					} else {
+						$this.css({
+							position: 'fixed',
+							top: 0
+						});
+					}
+				});
+			};
+			$('#haha').followTo(112);
 		</script>
-	</html>
+	</body>
+</html>

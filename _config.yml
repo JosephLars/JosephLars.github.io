@@ -1,2 +1,4 @@
 name: Joseph Lars Pratt
 markdown: kramdown
+gems:
+  - jekyll-sitemap

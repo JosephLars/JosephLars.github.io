@@ -31,8 +31,20 @@
 			{% else %}
 				<a href="/">Blog</a> •
 			{% endif %}
-			<a href="/apps">Apps</a> •
-			<a href="/more">More</a>
+			
+			{% if page.url == "/apps" %}
+				<a href="/apps" style="color: white;"><b>Apps</b></a> •
+			{% else %}
+				<a href="/apps">Apps</a> •
+			{% endif %}
+			
+			{% if page.url == "/more" %}
+				<a href="/more" style="color: white;"><b>More</b></a>
+			{% else %}
+				<a href="/more">More</a>
+			{% endif %}
+			
+			
 		</div>
 
 		<div class="container">

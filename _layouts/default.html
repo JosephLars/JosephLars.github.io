@@ -26,7 +26,11 @@
 				</div> Enthusiast.</h4>
 		</header>
 		<div class="subtitle" id="haha">
-			<a href="/" style="color: white;"><b>Blog</b></a> •
+			{% if page.url == "/" %}
+				<a href="/" style="color: white;"><b>Blog</b></a> •
+			{% else %}
+				<a href="/">Blog</a> •
+			{% endif %}
 			<a href="/apps">Apps</a> •
 			<a href="/more">More</a>
 		</div>
